@@ -3,6 +3,7 @@
 {% block title %} Анкета {% endblock %}
 
 {% block content %}
+<!-- всевозможные статистические данные -->
 <label style="font-size: 35px">Статистика по метаданным.</label><br>
 <label style="font-size: 25px">Количество участников опроса: {{total}}</label><br>
 <label style="font-size: 25px">Минимальный возраст: {{min}}</label><br>
@@ -18,6 +19,7 @@
 <label style="font-size: 25px">{{a8}} было бы лучше если бы я Кольку не видела.</label><br>
 <label style="font-size: 25px">{{a9}} отсюда не видно, что происходит.</label><br>
 <label style="font-size: 25px">И как сейчас в Новосибирске, холодно или тепло? — {{a10}} холодно.</label><br>
+<!-- график соотношения датива и формы с для -->
 <div class="text-center">
 <label style="font-size: 25px">Общее количество использованных форм</label><br>
 <img src="static\{{chart}}"

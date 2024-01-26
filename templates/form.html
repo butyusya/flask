@@ -3,14 +3,14 @@
 {% block title %} Анкета {% endblock %}
 
 {% block content %}
-
-
 <form action="\thanks">
     <label style="font-size: 35px" for="q1">Метаданные</label>
+  <!-- просто поле ввода -->
   <div class="form-group">
     <label style="font-size: 25px" for="q1">Сколько вам лет?</label>
     <input type="text" class="form-control" name="a1" id="q1" placeholder="20">
   </div>
+  <!-- вопросы и варианты выбора да/нет -->
   <div class="form-group">
     <label style="font-size: 25px">Является ли русский вашим родным языком?</label><br>
         <input id="yes1" type="radio" name="a2" value="yes">
@@ -26,6 +26,7 @@
         <input id="no2" type="radio" name="a3" value="no">
         <label for="no2">Нет</label>
   </div>
+  <!-- выскакивающий список вариантов -->
   <div class="form-group">
     <label style="font-size: 25px" for="q4">Какой ваш любимый падеж?</label>
     <select name="a4" class="form-control" id="q4">
@@ -38,6 +39,7 @@
       <option>Другой</option>
     </select>
   </div><br>
+  <!-- вопросы, для которых есть варианты ответов, подходящие для исследования -->
   <div class="form-group">
     <label style="font-size: 35px">Анкета. Заполните пропуски:</label><br>
     <label style="font-size: 25px">___ холодно.</label><br>
@@ -105,6 +107,7 @@
         <input id="n5" type="radio" name="a9" value="none">
         <label for="n5">Нет подходящего</label>
   </div>
+  <!-- вопросы со свободным полем для ответа -->
   <div class="form-group">
     <label style="font-size: 25px" for="q10">Странно было бы ___ (профессор) выслушивать такое от студентов.</label>
     <input type="text" class="form-control" name="a10" id="q10" placeholder="профессор">
