@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %} Анкета {% endblock %}
+
+{% block content %}
+<label style="font-size: 35px">Статистика по метаданным.</label><br>
+<label style="font-size: 25px">Количество участников опроса: {{total}}</label><br>
+<label style="font-size: 25px">Минимальный возраст: {{min}}</label><br>
+<label style="font-size: 25px">Максимальный возраст: {{max}}</label><br>
+<label style="font-size: 25px">Доля носителей русского: {{rus}}</label><br>
+<label style="font-size: 25px">Доля знающих болгарский: {{bulg}}</label><br>
+<label style="font-size: 35px">Статистика по анкете. Самые популярные ответы.</label><br>
+<label style="font-size: 30px">Среди заданий с выбором ответа:</label><br>
+<label style="font-size: 25px">{{test_count}}.</label><br>
+<label style="font-size: 30px">Среди заданий с открытым ответом:</label><br>
+<label style="font-size: 25px">Странно было бы {{a6}} выслушивать такое от студентов.</label><br>
+<label style="font-size: 25px">Технических характеристик мыши производитель не сообщает, что {{a7}} странно.</label><br>
+<label style="font-size: 25px">{{a8}} было бы лучше если бы я Кольку не видела.</label><br>
+<label style="font-size: 25px">{{a9}} отсюда не видно, что происходит.</label><br>
+<label style="font-size: 25px">И как сейчас в Новосибирске, холодно или тепло? — {{a10}} холодно.</label><br>
+<div class="text-center">
+<label style="font-size: 25px">Общее количество использованных форм</label><br>
+<img src="static\{{chart}}"
+     alt="датив против для"
+     width="800">
+</div>
+{% endblock %}

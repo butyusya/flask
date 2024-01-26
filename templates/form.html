@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% block title %} Анкета {% endblock %}
+
+{% block content %}
+
+
+<form action="\thanks">
+    <label style="font-size: 35px" for="q1">Метаданные</label>
+  <div class="form-group">
+    <label style="font-size: 25px" for="q1">Сколько вам лет?</label>
+    <input type="text" class="form-control" name="a1" id="q1" placeholder="20">
+  </div>
+  <div class="form-group">
+    <label style="font-size: 25px">Является ли русский вашим родным языком?</label><br>
+        <input id="yes1" type="radio" name="a2" value="yes">
+        <label for="yes1">Да</label>
+
+        <input id="no1" type="radio" name="a2" value="no">
+        <label for="no1">Нет</label>
+            <br>
+    <label style="font-size: 25px">Знаете ли вы болгарский?</label><br>
+        <input id="yes2" type="radio" name="a3" value="yes">
+        <label for="yes2">Да</label>
+
+        <input id="no2" type="radio" name="a3" value="no">
+        <label for="no2">Нет</label>
+  </div>
+  <div class="form-group">
+    <label style="font-size: 25px" for="q4">Какой ваш любимый падеж?</label>
+    <select name="a4" class="form-control" id="q4">
+      <option>Именительный</option>
+      <option>Родительный</option>
+      <option>Дательный</option>
+      <option>Винительный</option>
+      <option>Творительный</option>
+      <option>Предложный</option>
+      <option>Другой</option>
+    </select>
+  </div><br>
+  <div class="form-group">
+    <label style="font-size: 35px">Анкета. Заполните пропуски:</label><br>
+    <label style="font-size: 25px">___ холодно.</label><br>
+        <input id="d1" type="radio" name="a5" value="dat">
+        <label for="d1">Собаке</label>
+
+        <input id="f1" type="radio" name="a5" value="for">
+        <label for="f1">Для собаки</label>
+
+        <input id="b1" type="radio" name="a5" value="both">
+        <label for="b1">Возможны оба</label>
+
+        <input id="n1" type="radio" name="a5" value="none">
+        <label for="n1">Нет подходящего</label>
+            <br>
+    <label style="font-size: 25px">Я не поеду в Норвегию. ___ там холодно.</label><br>
+        <input id="d2" type="radio" name="a6" value="dat">
+        <label for="d2">мне</label>
+
+        <input id="f2" type="radio" name="a6" value="for">
+        <label for="f2">для меня</label>
+
+        <input id="b2" type="radio" name="a6" value="both">
+        <label for="b2">Возможны оба</label>
+
+        <input id="n2" type="radio" name="a6" value="none">
+        <label for="n2">Нет подходящего</label>
+      <br>
+    <label style="font-size: 25px">___ непонятно, зачем люди пьют алкоголь.</label><br>
+        <input id="d3" type="radio" name="a7" value="dat">
+        <label for="d3">Мне</label>
+
+        <input id="f3" type="radio" name="a7" value="for">
+        <label for="f3">Для меня</label>
+
+        <input id="b3" type="radio" name="a7" value="both">
+        <label for="b3">Возможны оба</label>
+
+        <input id="n3" type="radio" name="a7" value="none">
+        <label for="n3">Нет подходящего</label>
+      <br>
+    <label style="font-size: 25px">Но он понял, что в «Экспортлес» дольше работать ___ невозможно.</label><br>
+        <input id="d4" type="radio" name="a8" value="dat">
+        <label for="d4">ему</label>
+
+        <input id="f4" type="radio" name="a8" value="for">
+        <label for="f4">для него</label>
+
+        <input id="b4" type="radio" name="a8" value="both">
+        <label for="b4">Возможны оба</label>
+
+        <input id="n4" type="radio" name="a8" value="none">
+        <label for="n4">Нет подходящего</label>
+      <br>
+    <label style="font-size: 25px">Не взять пешку, которая находится под боем, совершенно ___ невозможно.</label><br>
+        <input id="d5" type="radio" name="a9" value="dat">
+        <label for="d5">ему</label>
+
+        <input id="f5" type="radio" name="a9" value="for">
+        <label for="f5">для него</label>
+
+        <input id="b5" type="radio" name="a9" value="both">
+        <label for="b5">Возможны оба</label>
+
+        <input id="n5" type="radio" name="a9" value="none">
+        <label for="n5">Нет подходящего</label>
+  </div>
+  <div class="form-group">
+    <label style="font-size: 25px" for="q10">Странно было бы ___ (профессор) выслушивать такое от студентов.</label>
+    <input type="text" class="form-control" name="a10" id="q10" placeholder="профессор">
+    <label style="font-size: 25px" for="q11">Технических характеристик мыши производитель не сообщает, что ___ (он) странно.</label>
+    <input type="text" class="form-control" name="a11" id="q11" placeholder="он">
+    <label style="font-size: 25px" for="q12">___ (я) было бы лучше если бы я Кольку не видела.</label>
+    <input type="text" class="form-control" name="a12" id="q12" placeholder="я">
+    <label style="font-size: 25px" for="q13">___ (он) отсюда не видно, что происходит.</label>
+    <input type="text" class="form-control" name="a13" id="q13" placeholder="он">
+    <label style="font-size: 25px" for="q14">И как сейчас в Новосибирске, холодно или тепло? — ___ (я) холодно.</label>
+    <input type="text" class="form-control" name="a14" id="q14" placeholder="я">
+  </div>
+  <button type="submit" class="btn btn-primary">Отправить форму</button>
+</form>
+{% endblock %}
